@@ -78,3 +78,5 @@ function cacheFunction(cb) {
       }
     }
   } */
+
+  console.log([] == ![])

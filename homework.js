@@ -42,7 +42,7 @@ otra vez cálculos que ya se hicieron anteriormente.
 function cacheFunction(cb) {
   const objeto = {}
   return function closure(arg){
-    if(objeto.hasOwnProperty(`${arg}`)){
+    if(objeto.hasOwnProperty(arg)){
     return objeto[arg];
     }else{
       objeto[arg] = cb(arg);
